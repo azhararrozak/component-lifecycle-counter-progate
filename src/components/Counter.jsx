@@ -3,6 +3,13 @@ import React, { useState, useEffect } from 'react'
 const Counter = ({ finishGame }) => {
   const [count, setCount] = useState(0)
 
+//   useEffect(() => {
+//     console.log('rendered')
+//     return () => {
+//       console.log('cleaned up')
+//     }
+//   })
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress)
     return () => {

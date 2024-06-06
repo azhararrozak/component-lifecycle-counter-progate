@@ -5,12 +5,6 @@ import GameOver from './components/GameOver'
 const App = () => {
   const [isGameOver, setIsGameOver] = useState(false)
 
-  useEffect(() => {
-    console.log('rendered')
-    return () => {
-      console.log('cleaned up')
-    }
-  })
   
   const finishGame = () => {
     setIsGameOver(true)
